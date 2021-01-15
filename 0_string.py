@@ -13,7 +13,7 @@ HaveSpaceStr = " String "
 name = name.upper()
 changename = name.upper()
 
-Name =  FirstName + " " +LastName
+Name =  FirstName + " " + LastName
 
 NoSpaceStr = HaveSpaceStr.strip()
 RSpaceStr = HaveSpaceStr.rstrip()

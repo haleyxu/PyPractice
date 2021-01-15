@@ -1,25 +1,40 @@
+"""
+列表的操作
+list
+列表是有序的，列表的元素是可变的，列表自身是可变的
+对列表的操作： 增、删、改、查
+"""
+
 listofcolor = ["red", "blue", "green", "yellow"]
 
 #列表的打印会自带方括号，输出形式和赋值的样式一致
 print(listofcolor)
-#下标索引,特别的支持负值索引
+
+#下标索引,特别的负值索引
+#   0       1       2       3
+#["red", "blue", "green", "yellow"]
+#   -4      -3      -2      -1
 print(listofcolor[0])
-print(listofcolor[-2])
+print(listofcolor[-4])
 
 
 #列表的操作 增、删、改、查
-#改
-listofcolor[0] = "black"
-print(listofcolor)
+
 #增：尾部追加
 listofcolor.append("brown")
 print(listofcolor)
-#增：插入
+#增：插入 方法:insert(index, element)
 listofcolor.insert(0, "orange")
 print(listofcolor)
+
+#改
+listofcolor[0] = "black"
+print(listofcolor)
+
 #删:del 语句
 del listofcolor[0]
 print(listofcolor)
+
 #删:pop(),会返回弹出的值
 popelement = listofcolor.pop()
 print(listofcolor)
